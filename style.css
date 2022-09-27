@@ -1,24 +1,29 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: 24px;
+    color: #1F2937;
 }
-
-.blue-bg {
+.blue-bg {    /*styles footer too*/
+    padding: 1px;
     background-color: #1F2937;
-    color: white;
+    color: #f9faf8;
+}
+.container { /*styles all the sections*/
+    width: 70%;
+    margin: 0 auto 100px;
 }
 
-.container {
-    width: 70%;
-    margin: 0 auto;
-    padding: 20px 0 50px;
-}
 
 .header {
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
 }
-
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
 ul {
     display: flex;
     margin: 0px;
@@ -26,57 +31,119 @@ ul {
     gap: 16px;
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
+
 
 .intro {
     display: flex;
+    gap: 50px;
 }
-
+.intro-header {
+    font-size: 56px;
+    font-weight: bolder;
+}
+.intro-text, a, .call, .footer { /*styles several things*/
+    color: #e5e7eb;
+}
 .intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
     width: 50%;
-    background-color: grey;
-    text-align: center;
+    background-color: #737d8c;
+}
+button {     /*styles the other button too*/
+    padding: 10px 30px;
+    border-radius: 8px;
+    border-width: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+.intro-button {
+    background-color: #d64e82;
+    border-style: none;
 }
 
 
 .info-header {
+    margin: 50px auto 50px;
     text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
 }
 .card-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 .card {
     width: 200px;
+    text-align: center;
 }
 .info-image {
     width: 200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 20px;
     border-style: solid;
-    border-color: pink;
+    border-width: 5px;
+    border-color: #d64e82;
 }
+
 
 .testimonial {
+    padding: 1px;
     background-color: #e5e7eb;
+    color: #1F2937;
+} 
+.testi-text {
+    margin-top: 100px;
 }
-
 .quote {
-    margin-left: 40px;
+    margin: 0 20px 0 100px;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
 }
 .liar {
     text-align: end;
+    font-size: 28px;
+    font-weight: bold;
 }
+
 
 .call {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     box-sizing: border-box;
-    margin: 20px auto;
-    padding: 50px;
-    background-color: pink;
+    margin: 100px auto;
+    padding: 50px 0;
+    border-radius: 20px;
+    background-color: #d64e82;
+    color:#f9faf8;
 }
+.call-header {
+    font-size: 28px;
+    font-weight: bold;
+}
+.call-button {
+    height: fit-content;
+    background-color: #d64e82;
+    border-color: #f9faf8;
+    border-style: solid;
+}
+
+
+
 .footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
