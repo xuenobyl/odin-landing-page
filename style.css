@@ -1,8 +1,82 @@
-body {}
+body {
+    margin: 0;
+    padding: 0;
+}
 
-.header{}
-.intro{}
-.info{}
-.testimonial{}
-.call{}
-.footer{}
+.blue-bg {
+    background-color: #1F2937;
+    color: white;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    gap: 16px;
+    list-style: none;
+}
+
+.intro {
+    display: flex;
+}
+
+.intro-image {
+    flex-shrink: 0;
+    width: 50%;
+    background-color: grey;
+    text-align: center;
+}
+
+
+.info-header {
+    text-align: center;
+}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.card {
+    width: 200px;
+}
+.info-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: pink;
+}
+
+.testimonial {
+    background-color: #e5e7eb;
+}
+
+.quote {
+    margin-left: 40px;
+}
+.liar {
+    text-align: end;
+}
+
+.call {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: pink;
+}
+.footer {
+    text-align: center;
+}
